@@ -48,7 +48,7 @@ def write_students_descending(filepath: str) -> None:
 
     students[1:] = sorted(students[1:], key=lambda x: (x[1]), reverse=True)
 
-    with open(os.path.join('session_4/results', 'students_descending.txt'), 'w') as csv_file:
+    with open(os.path.join('session_4/results', 'students_descending.csv'), 'w') as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
         writer.writerows(students)
 
